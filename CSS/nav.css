@@ -1,0 +1,67 @@
+.site-nav {
+    background-color: #244b3a;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+}
+
+.nav-list,
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.site-nav a,
+.nav-dropdown summary {
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.nav-dropdown summary:hover,
+.site-nav a:focus-visible,
+.nav-dropdown summary:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown summary {
+    list-style: none;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.nav-dropdown summary::after {
+    content: " \25BE";
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 18%);
+    color: #17231d;
+    min-width: 12rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    padding: 0.5rem 0;
+}

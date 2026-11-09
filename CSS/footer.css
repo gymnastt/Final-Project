@@ -1,0 +1,175 @@
+.site-footer {
+    background-color: #2d4d75;
+    color: #fff;
+    padding: 3rem max(1.5rem, calc((100% - 78rem) / 2));
+}
+
+.footer-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.site-footer a {
+    color: inherit;
+}
+
+.footer-contact,
+.footer-nonprofit,
+.footer-quick-links {
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.footer-brand {
+    display: inline-block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    text-decoration: none;
+}
+
+.site-footer h2 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+}
+
+.footer-contact address {
+    font-style: normal;
+    margin-bottom: 0.25rem;
+}
+
+.footer-contact-link,
+.footer-privacy {
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.footer-quick-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 0.5rem;
+}
+
+.footer-quick-links li + li {
+    margin-top: 0.25rem;
+}
+
+.footer-quick-links a {
+    text-decoration: none;
+}
+
+.footer-quick-links a:hover,
+.footer-quick-links a:focus-visible,
+.footer-contact a:hover,
+.footer-contact a:focus-visible,
+.footer-privacy:hover,
+.footer-privacy:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.footer-social {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.footer-social a {
+    align-items: center;
+    display: inline-flex;
+    font-size: 1.1rem;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 1.75rem;
+    min-width: 1.75rem;
+    text-decoration: none;
+}
+
+.footer-nonprofit p {
+    margin: 0 0 1rem;
+}
+
+.footer-privacy {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-badges {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.footer-badge {
+    align-items: center;
+    background-color: #fff;
+    border: 0.25rem solid #7672ee;
+    border-radius: 0.6rem;
+    color: #182b47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.15;
+    min-height: 7rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 7rem;
+}
+
+.footer-badge span {
+    color: #625be8;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    margin-top: 0.4rem;
+}
+
+.footer-badge small {
+    font-size: 0.55rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+.footer-badge-candid {
+    align-items: flex-start;
+    border: 0.3rem double #9badb4;
+    border-radius: 0;
+    padding-left: 0.75rem;
+    text-align: left;
+}
+
+.footer-badge-candid span {
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media (max-width: 56rem) {
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-nonprofit {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 38rem) {
+    .site-footer {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-nonprofit {
+        grid-column: auto;
+    }
+}

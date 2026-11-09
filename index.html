@@ -4,14 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <script src="JS/script.js" defer></script>
 </head>
 <body>
-    <nav>
-        
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li>
+                <details class="nav-dropdown">
+                    <summary>Adoption</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="adoption.html">Adoption Home</a></li>
+                        <li><a href="adoption.html#available-pets">Available Pets</a></li>
+                        <li><a href="adoption.html#adoption-process">Adoption Process</a></li>
+                        <li><a href="adoption.html#application">Application</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
+
+    <main>
+        <section class="carousel" aria-label="Adoptable pets">
+            <div class="carousel-slides" aria-live="polite">
+                <figure class="carousel-slide" aria-hidden="false">
+                    <img src="images/home_pictures_1.png"
+                         alt="A golden retriever enjoying the outdoors">
+                    <figcaption>Make a difference</figcaption>
+                </figure>
+                <figure class="carousel-slide" aria-hidden="true" hidden>
+                    <img src="images/home_pictures_2.png"
+                         alt="A cat looking curiously at the camera">
+                    <figcaption>Saving lives</figcaption>
+                </figure>
+                <figure class="carousel-slide" aria-hidden="true" hidden>
+                    <img src="images/home_pictures_3.png"
+                         alt="A happy dog ready to play">
+                    <figcaption>Featured Pet</figcaption>
+                </figure>
+                <figure class="carousel-slide" aria-hidden="true" hidden>
+                    <img src="images/home_pictures_4.png"
+                         alt="A cat at Sea-Meow Con">
+                    <figcaption>Celebrate Sea-Meow Con!</figcaption>
+                </figure>
+            </div>
+            <button class="carousel-control carousel-previous" type="button" aria-label="Show previous picture">
+                &#10094;
+            </button>
+            <button class="carousel-control carousel-next" type="button" aria-label="Show next picture">
+                &#10095;
+            </button>
+            <div class="carousel-indicators" aria-label="Choose a picture">
+                <button type="button" aria-label="Show picture 1" aria-current="true"></button>
+                <button type="button" aria-label="Show picture 2" aria-current="false"></button>
+                <button type="button" aria-label="Show picture 3" aria-current="false"></button>
+                <button type="button" aria-label="Show picture 4" aria-current="false"></button>
+            </div>
+        </section>
+
+        <section class="donate-section" aria-labelledby="donate-heading">
+            <h2 id="donate-heading">Help pets find loving homes</h2>
+            <p>Your donation supports animals in need and the people who care for them.</p>
+            <a class="donate-button" href="https://www.seattlehumane.org/?form=donate" target="_blank" rel="noopener noreferrer">
+                Donate to Seattle Humane
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <section class="footer-contact" aria-labelledby="footer-contact-heading">
+                <a class="footer-brand" href="https://www.seattlehumane.org/">Seattle Humane</a>
+                <h2 id="footer-contact-heading">Contact Info</h2>
+                <address>
+                    <a href="tel:+14256410080">425.641.0080</a><br>
+                    13212 SE Eastgate Way<br>
+                    Bellevue, WA 98005
+                </address>
+                <a class="footer-contact-link" href="https://www.seattlehumane.org/about/contact/">Contact Us</a>
+                <nav class="footer-social" aria-label="Social media">
+                    <a href="https://www.facebook.com/SeattleHumane/" aria-label="Facebook">f</a>
+                    <a href="https://www.linkedin.com/company/seattle-humane/" aria-label="LinkedIn">in</a>
+                    <a href="https://www.instagram.com/seattlehumane/" aria-label="Instagram">ig</a>
+                    <a href="https://www.tiktok.com/@seattlehumane" aria-label="TikTok">♪</a>
+                    <a href="https://www.youtube.com/user/SeattleHumane" aria-label="YouTube">▶</a>
+                    <a href="https://maps.google.com/?q=13212+SE+Eastgate+Way+Bellevue+WA+98005" aria-label="Location">⌖</a>
+                </nav>
+            </section>
+
+            <nav class="footer-quick-links" aria-labelledby="footer-links-heading">
+                <h2 id="footer-links-heading">Quick Links</h2>
+                <ul>
+                    <li><a href="adoption.html">Adoption</a></li>
+                    <li><a href="https://www.seattlehumane.org/services/">Services</a></li>
+                    <li><a href="https://www.seattlehumane.org/get-involved/">Get Involved</a></li>
+                    <li><a href="https://www.seattlehumane.org/resource-library/">Resource Library</a></li>
+                    <li><a href="https://www.seattlehumane.org/about/">About</a></li>
+                    <li><a href="https://www.seattlehumane.org/?form=donate">Ways to Give</a></li>
+                    <li><a href="https://www.seattlehumane.org/blog/">Blog</a></li>
+                    <li><a href="https://shop.seattlehumane.org/">Shop</a></li>
+                    <li><a href="https://www.seattlehumane.org/about/location-hours/">Location &amp; Hours</a></li>
+                    <li><a href="https://www.seattlehumane.org/?form=donate">Donate Now</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-nonprofit" aria-label="Nonprofit information">
+                <p>Seattle Humane is a 501(c)(3) organization. Our tax-ID number is <strong>91-0282060</strong> and donations are tax-deductible to the extent allowed by law.</p>
+                <a class="footer-privacy" href="https://www.seattlehumane.org/privacy-policy/">Privacy Policy</a>
+                <div class="footer-badges" aria-label="Charity ratings">
+                    <div class="footer-badge"><strong>Charity<br>Navigator</strong><span>★★★★</span><small>FOUR-STAR</small></div>
+                    <div class="footer-badge footer-badge-candid"><strong>Platinum<br>Transparency</strong><span>2025</span><small>Candid</small></div>
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
