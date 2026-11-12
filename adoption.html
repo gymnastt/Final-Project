@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adoption</title>
+    <title>Find a Pet | Adoption</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <script src="JS/script.js" defer></script>
 </head>
-<body>
+<body class="adoption-page">
     <nav class="site-nav" aria-label="Main navigation">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
@@ -28,15 +28,112 @@
     </nav>
 
     <main>
-        <h1>Adoption</h1>
-        <section id="available-pets">
-            <h2>Available Pets</h2>
+        <section class="adoption-hero" aria-labelledby="adoption-heading">
+            <div class="adoption-hero-content">
+                <p class="adoption-eyebrow">A new best friend is waiting</p>
+                <h1 id="adoption-heading">Find a Pet!</h1>
+                <p class="adoption-intro">Find your new furry family member. Take a look at a few of the pets looking for a place to call home.</p>
+                <a class="adoption-primary-link" href="#available-pets">Meet the pets <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="adoption-hero-note" aria-hidden="true">
+                <span>Good things</span>
+                <strong>come in<br>paw-shaped<br>packages.</strong>
+                <span class="adoption-paw">♥</span>
+            </div>
         </section>
-        <section id="adoption-process">
-            <h2>Adoption Process</h2>
+
+        <section class="pet-finder" id="available-pets" aria-labelledby="pets-heading">
+            <div class="pet-finder-heading">
+                <div>
+                    <p class="adoption-eyebrow">Your search starts here</p>
+                    <h2 id="pets-heading">Meet your new best friend</h2>
+                </div>
+                <p>Every pet has their own story. Could one of these be part of yours?</p>
+            </div>
+
+            <form class="pet-filters" aria-label="Filter pets">
+                <label class="pet-search">
+                    <span>Search by name</span>
+                    <input type="search" name="pet-search" placeholder="Try “Milo”" autocomplete="off">
+                </label>
+                <label>
+                    <span>Animal</span>
+                    <select name="species">
+                        <option value="all">All animals</option>
+                        <option value="dog">Dogs</option>
+                        <option value="cat">Cats</option>
+                        <option value="critters">Critters</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Age</span>
+                    <select name="age">
+                        <option value="all">Any age</option>
+                        <option value="under 6 mo.">Under 6 months</option>
+                        <option value="6 mo. - 1 year">6 months - 1 year</option>
+                        <option value="1-7 years">1-7 years</option>
+                        <option value="7+ years">7+ years</option>
+                    </select>
+                </label>
+            </form>
+
+            <p class="pet-results" aria-live="polite">Showing 3 pets</p>
+
+            <div class="pet-grid">
+                <article class="pet-card" data-name="magoo" data-species="dog" data-age="senior">
+                    <img src="images/home_pictures_3.png" alt="Magoo, a friendly white dog, looking at the camera">
+                    <div class="pet-card-content">
+                        <h3>Magoo</h3>
+                        <p><strong>Age / Gender</strong><span>7 years / Male</span></p>
+                        <p><strong>Looks Like</strong><span>Boxer mix</span></p>
+                        <p><strong>Location</strong><span>Dog adoption</span></p>
+                    </div>
+                    <a class="pet-card-link" href="#application">Meet Magoo <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="pet-card" data-name="luna" data-species="cat" data-age="young">
+                    <img src="images/home_pictures_4.png" alt="A curious tabby cat spending time with a person">
+                    <div class="pet-card-content">
+                        <h3>Luna</h3>
+                        <p><strong>Age / Gender</strong><span>1 year / Female</span></p>
+                        <p><strong>Looks Like</strong><span>Domestic shorthair</span></p>
+                        <p><strong>Location</strong><span>Cat adoption</span></p>
+                    </div>
+                    <a class="pet-card-link" href="#application">Meet Luna <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="pet-card" data-name="buddy" data-species="dog" data-age="adult">
+                    <img src="images/home_pictures_2.png" alt="A black dog resting happily with a person">
+                    <div class="pet-card-content">
+                        <h3>Buddy</h3>
+                        <p><strong>Age / Gender</strong><span>3 years / Male</span></p>
+                        <p><strong>Looks Like</strong><span>Labrador mix</span></p>
+                        <p><strong>Location</strong><span>Dog adoption</span></p>
+                    </div>
+                    <a class="pet-card-link" href="#application">Meet Buddy <span aria-hidden="true">→</span></a>
+                </article>
+                <p class="pet-empty" hidden>No pets match those filters. Try changing your search.</p>
+            </div>
+            <p class="pet-note">These sample profiles show the kinds of details you can look for while finding your match.</p>
         </section>
-        <section id="application">
-            <h2>Application</h2>
+
+        <section class="home-to-home" aria-labelledby="home-to-home-heading">
+            <div>
+                <p class="adoption-eyebrow">Still looking?</p>
+                <h2 id="home-to-home-heading">Consider Home to Home</h2>
+                <p>Pets can find a loving new home without ever entering a shelter. Connect directly with a pet’s current family and learn about their personality and preferences first-hand.</p>
+            </div>
+            <a class="adoption-secondary-link" href="https://home-home.org/shelter/sh/" target="_blank" rel="noopener noreferrer">Explore Home to Home <span aria-hidden="true">↗</span></a>
+        </section>
+
+        <section class="adoption-next-steps" id="adoption-process" aria-labelledby="process-heading">
+            <div>
+                <p class="adoption-eyebrow">Ready to meet?</p>
+                <h2 id="process-heading">A little preparation goes a long way.</h2>
+                <p>Learn what to expect before you bring a new friend home, then take the next step when you’re ready.</p>
+            </div>
+            <div class="adoption-next-links">
+                <a href="https://www.seattlehumane.org/adoption/adoption-process/" target="_blank" rel="noopener noreferrer">Read about the adoption process <span aria-hidden="true">→</span></a>
+                <a id="application" href="https://www.seattlehumane.org/adoption/" target="_blank" rel="noopener noreferrer">Start your adoption journey <span aria-hidden="true">→</span></a>
+            </div>
         </section>
     </main>
 
