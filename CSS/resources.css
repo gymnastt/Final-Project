@@ -1,0 +1,70 @@
+.resources-section {
+    color: #23332c;
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+.resources-section h1 {
+    color: #244b3a;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin: 0 0 0.75rem;
+    text-align: center;
+}
+
+.resources-section > p {
+    margin: 0 auto 1.75rem;
+    max-width: 42rem;
+    text-align: center;
+}
+
+.resources-table-wrap {
+    overflow-x: auto;
+}
+
+.resources-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.resources-table th,
+.resources-table td {
+    border: 1px solid #d5e0d4;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.resources-table thead {
+    background: #244b3a;
+    color: #fff;
+}
+
+.resources-table tbody tr:nth-child(even) {
+    background: #f5f8f3;
+}
+
+.resources-table tbody th[scope="rowgroup"] {
+    background: #edf4e9;
+    color: #244b3a;
+    min-width: 10rem;
+    vertical-align: top;
+}
+
+.resources-table a,
+.resources-source a {
+    color: #244b3a;
+    font-weight: 700;
+    text-underline-offset: 0.15em;
+}
+
+.resources-table a:hover,
+.resources-table a:focus-visible,
+.resources-source a:hover,
+.resources-source a:focus-visible {
+    color: #173327;
+}
+
+.resources-section > .resources-source {
+    margin: 1.5rem 0 0;
+    text-align: left;
+}

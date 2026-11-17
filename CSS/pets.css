@@ -78,3 +78,9 @@
   font-size: .9rem;
   color: #4a5d51;
 }
+
+.pets-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
