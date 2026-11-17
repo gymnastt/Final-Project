@@ -454,19 +454,28 @@
     transform: scale(1.25);
 }
 
-.donate-section {
+.donate-section,
+.find-pets-section {
     background-color: #edf4e9;
     padding: 3rem 1.5rem;
     text-align: center;
 }
 
-.donate-section h2 {
+.find-pets-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-section h2,
+.find-pets-section h2 {
     color: #244b3a;
     font-size: clamp(1.5rem, 3vw, 2.25rem);
     margin: 0 0 0.75rem;
 }
 
-.donate-section p {
+.donate-section p,
+.find-pets-section p {
     margin: 0 auto 1.5rem;
     max-width: 38rem;
 }

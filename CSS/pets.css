@@ -1,6 +1,23 @@
-.club-section { margin: 0 0 40px; 
-padding: 0 32px; margin-top: 40px;}
-.club-section__title { margin: 0 0 14px; font-size: 1.3rem; }
+.pets-page {
+  background: #edf4e9;
+  color: #23332c;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.club-section {
+  margin: 0 auto;
+  max-width: 78rem;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.club-section__title {
+  color: #244b3a;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
  
 .club-grid {
   display: grid;
@@ -16,28 +33,30 @@ padding: 0 32px; margin-top: 40px;}
 .club-card {
   display: flex;
   flex-direction: column;
-  background: white;
-  border: 2px solid gainsboro;
-  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e0e8dd;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.3rem 1.2rem rgb(35 51 44 / 12%);
   aspect-ratio: 1 / 1;                     
   overflow: hidden;
-  color: inherit;
+  color: #23332c;
   text-decoration: none;
   transition: transform .15s, box-shadow .15s, border-color .15s;
 }
 .club-card:hover,
 .club-card:focus-visible {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,.08);
-  border-color: hotpink;
+  box-shadow: 0 0.5rem 1.25rem rgb(35 51 44 / 18%);
+  border-color: #78bdb2;
   outline: none;
 }
  
 .club-card__title {
+  color: #244b3a;
   margin: 0;
   padding: 12px 16px;
   font-size: 1.1rem;
-  border-bottom: 2px solid gainsboro;
+  border-bottom: 1px solid #e0e8dd;
 }
  
 .club-card__img {
@@ -45,8 +64,8 @@ padding: 0 32px; margin-top: 40px;}
   width: 100%;
   flex: 1;                                 
   min-height: 0;
-  object-fit: cover;
-  background: lavender;
+  object-fit: contain;
+  background: #edf4e9;
 }
  
 .club-card__footer {
@@ -55,7 +74,7 @@ padding: 0 32px; margin-top: 40px;}
   gap: 8px;
   margin-top: auto;
   padding: 10px 16px;
-  border-top: 2px solid gainsboro;
+  border-top: 1px solid #e0e8dd;
   font-size: .9rem;
-  color: dimgray;
+  color: #4a5d51;
 }
