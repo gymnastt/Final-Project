@@ -18,12 +18,40 @@
              <li><a href="adoption.html">Adoption</a></li>
              <li><a href="resources.html">Resources</a></li>
              <li><a href="pets.html" aria-current="page">Pets</a></li>
+             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
 
 <section class="club-section">
-    <h2 class="club-section__title">Pets</h2>
+    <h1 class="club-section__title">Find your new best friend</h1>
+    <p class="club-section__intro">Search the pets looking for a loving home.</p>
+  <form class="pet-filters" aria-label="Filter pets">
+    <label class="pet-search">
+      <span>Search by name</span>
+      <input type="search" name="pet-search" placeholder="Try “Milo”" autocomplete="off">
+    </label>
+    <label>
+      <span>Animal</span>
+      <select name="species">
+        <option value="all">All animals</option>
+        <option value="dog">Dogs</option>
+        <option value="cat">Cats</option>
+        <option value="critters">Critters</option>
+      </select>
+    </label>
+    <label>
+      <span>Age</span>
+      <select name="age">
+        <option value="all">Any age</option>
+        <option value="under 6 mo.">Under 6 months</option>
+        <option value="6 mo. - 1 year">6 months - 1 year</option>
+        <option value="1-7 years">1-7 years</option>
+        <option value="7+ years">7+ years</option>
+      </select>
+    </label>
+  </form>
+  <p class="pet-results" aria-live="polite">Showing pets</p>
   <div class="club-grid">
 
 
@@ -342,6 +370,7 @@ Chinchilla</span>
            </a>
 
   </div>
+  <p class="pet-empty" hidden>No pets match those filters. Try changing your search.</p>
   <div class="pets-more">
     <a class="donate-button" href="https://www.seattlehumane.org/adoption/find-a-pet/?" target="_blank" rel="noopener noreferrer">
       More Pets

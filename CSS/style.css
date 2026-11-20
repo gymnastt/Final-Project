@@ -1,3 +1,179 @@
+.contact-page {
+    background: #fff;
+    color: #23332c;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-page *,
+.contact-page *::before,
+.contact-page *::after {
+    box-sizing: border-box;
+}
+
+.contact-hero {
+    background: #edf4e9;
+    padding: 3.5rem max(1.5rem, calc((100% - 74rem) / 2));
+    position: relative;
+}
+
+.contact-hero div {
+    max-width: 48rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hero::after {
+    background: #d7e5d1;
+    border-radius: 50%;
+    content: "";
+    height: 13rem;
+    position: absolute;
+    right: max(3rem, calc((100% - 70rem) / 2));
+    top: 1.5rem;
+    width: 13rem;
+}
+
+.contact-eyebrow {
+    color: #2d4d75;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    margin: 0 0 0.65rem;
+    text-transform: uppercase;
+}
+
+.contact-hero h1 {
+    color: #244b3a;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin: 0 0 1.25rem;
+}
+
+.contact-hero p:last-child {
+    font-size: clamp(1.05rem, 2vw, 1.2rem);
+    margin: 0;
+    max-width: 40rem;
+}
+
+.contact-content {
+    display: block;
+    margin: 0 auto;
+    max-width: 78rem;
+    padding: 3.5rem 1.5rem 4rem;
+}
+
+.contact-directory-heading {
+    align-items: end;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details h2,
+.contact-callout h2 {
+    color: #244b3a;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    letter-spacing: -0.035em;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.contact-directory-heading > p {
+    color: #58675e;
+    margin: 0 0 0.25rem;
+}
+
+.contact-directory {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+.contact-card {
+    background: #f5f7f3;
+    border: 1px solid #e0e8dd;
+    border-top: 0.25rem solid #78bdb2;
+    border-radius: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+    padding: 1.25rem;
+    transition: box-shadow 160ms ease, transform 160ms ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 0.5rem 1.2rem rgb(35 51 44 / 12%);
+    transform: translateY(-2px);
+}
+
+.contact-card h3 {
+    color: #244b3a;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 0 0 0.35rem;
+}
+
+.contact-card p {
+    color: #4a5d51;
+    margin: 0;
+}
+
+.contact-card a {
+    color: #244b3a;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.contact-card .contact-card-more {
+    align-items: baseline;
+    display: flex;
+    gap: 0.4rem;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 0.55rem;
+    text-decoration: none;
+}
+
+.contact-card-more:hover,
+.contact-card-more:focus-visible,
+.contact-callout a:hover,
+.contact-callout a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.contact-callout {
+    align-items: center;
+    background: #2d4d75;
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 3.5rem max(1.5rem, calc((100% - 74rem) / 2));
+}
+
+.contact-callout .contact-eyebrow {
+    color: #d7e5d1;
+}
+
+.contact-callout h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.contact-callout a {
+    border: 1px solid #fff;
+    color: #fff;
+    flex: 0 0 auto;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+}
+
 .carousel {
     height: min(65vh, 36rem);
     min-height: 18rem;
@@ -27,14 +203,47 @@
     align-items: center;
     background: #edf4e9;
     display: grid;
-    gap: 2rem;
-    grid-template-columns: minmax(0, 1.2fr) minmax(16rem, 0.8fr);
+    grid-template-columns: minmax(0, 1fr);
     min-height: 25rem;
     padding: 4.5rem max(1.5rem, calc((100% - 74rem) / 2));
 }
 
 .adoption-hero-content {
     max-width: 43rem;
+}
+
+.adoption-why {
+    background: #fff;
+    padding: 4rem 1.5rem;
+}
+
+.adoption-why-content {
+    margin: 0 auto;
+    max-width: 58rem;
+}
+
+.adoption-why h2 {
+    color: #244b3a;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 1.25rem;
+}
+
+.adoption-why p:not(.adoption-eyebrow) {
+    font-size: 1.05rem;
+    margin: 0 0 1.1rem;
+}
+
+.adoption-why .adoption-why-stat {
+    background: #edf4e9;
+    border-left: 0.3rem solid #78bdb2;
+    border-radius: 0.25rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.adoption-why p:last-child {
+    margin-bottom: 0;
 }
 
 .adoption-eyebrow {
@@ -83,41 +292,6 @@
 .adoption-secondary-link:focus-visible {
     text-decoration: underline;
     text-underline-offset: 0.2em;
-}
-
-.adoption-hero-note {
-    align-items: flex-start;
-    background: #2d4d75;
-    border-radius: 48% 48% 0.5rem 0.5rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    min-height: 18rem;
-    padding: 2rem 3rem;
-    transform: rotate(2deg);
-    width: min(100%, 17rem);
-}
-
-.adoption-hero-note > span:first-child {
-    color: #d7e5d1;
-    font-size: 0.9rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-}
-
-.adoption-hero-note strong {
-    font-size: 2rem;
-    line-height: 1.1;
-    margin-top: 0.6rem;
-}
-
-.adoption-paw {
-    align-self: flex-end;
-    color: #f0b450;
-    font-size: 2rem;
-    margin-top: 1rem;
 }
 
 .pet-finder {
@@ -510,7 +684,6 @@
 
 @media (max-width: 56rem) {
     .adoption-hero {
-        grid-template-columns: minmax(0, 1fr) minmax(12rem, 0.65fr);
         padding-bottom: 3.5rem;
         padding-top: 3.5rem;
     }
@@ -531,21 +704,36 @@
 }
 
 @media (max-width: 38rem) {
+    .contact-hero {
+        padding: 2.75rem 1.25rem;
+    }
+
+    .contact-hero::after {
+        height: 7rem;
+        right: 0.5rem;
+        top: 1rem;
+        width: 7rem;
+    }
+
+    .contact-content {
+        padding: 2.5rem 1.25rem 3rem;
+    }
+
+    .contact-directory-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-callout {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 2.75rem 1.25rem;
+    }
+
     .adoption-hero {
-        grid-template-columns: 1fr;
         padding: 3rem 1.25rem;
-    }
-
-    .adoption-hero-note {
-        align-self: center;
-        justify-self: start;
-        min-height: 12rem;
-        padding: 1.5rem 2rem;
-        width: 14rem;
-    }
-
-    .adoption-hero-note strong {
-        font-size: 1.6rem;
     }
 
     .pet-finder {
